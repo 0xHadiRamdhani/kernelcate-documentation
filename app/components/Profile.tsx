@@ -80,15 +80,15 @@ export default function Profile() {
             <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-red-500/20">
                 <div className="flex justify-center space-x-4 sm:space-x-8 text-sm sm:text-base text-gray-400">
                     <div className="flex items-center">
-                        <span className="text-red-400 mr-1">LOCATION:</span>
+                        <span className="text-red-400 mr-1">📍</span>
                         Kota Bandung
                     </div>
                     <div className="flex items-center">
-                        <span className="text-red-400 mr-1">FOCUS:</span>
+                        <span className="text-red-400 mr-1">🎯</span>
                         Frontend & Mobile Development
                     </div>
                     <div className="flex items-center">
-                        <span className="text-red-400 mr-1">EXPERTISE:</span>
+                        <span className="text-red-400 mr-1">🔧</span>
                         Problem Solving
                     </div>
                 </div>
