@@ -15,7 +15,7 @@ interface LayerProps {
 
 export default function Layer({ title, type = 'normal', components = [], specs = {}, children }: LayerProps) {
     const getLayerClasses = () => {
-        const baseClasses = 'my-5 p-4 border-2 rounded-lg layer-hover';
+        const baseClasses = 'my-5 p-3 sm:p-4 lg:p-6 border-2 rounded-lg layer-hover';
 
         switch (type) {
             case 'syscall':
@@ -32,7 +32,7 @@ export default function Layer({ title, type = 'normal', components = [], specs =
     };
 
     const getTitleClasses = () => {
-        const baseClasses = 'text-white font-bold text-xl text-center p-3 -m-4 mb-4 rounded-t-lg relative overflow-hidden';
+        const baseClasses = 'text-white font-bold text-lg sm:text-xl lg:text-2xl text-center p-3 sm:p-4 -m-4 mb-4 rounded-t-lg relative overflow-hidden';
 
         return `${baseClasses} bg-gradient-to-r from-red-600 to-red-700 border-glow`;
     };

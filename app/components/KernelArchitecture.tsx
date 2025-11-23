@@ -9,59 +9,59 @@ import Profile from './Profile';
 export default function KernelArchitecture() {
     const userApplicationsComponents = [
         {
-            title: '🌐 NETWORK SCANNER',
+            title: 'NETWORK SCANNER',
             features: ['• Port Scanning (SYN, CONNECT, FIN)', '• Vulnerability Detection', '• OS Fingerprinting', '• Service Identification', '• Banner Grabbing']
         },
         {
-            title: '💥 EXPLOIT FRAMEWORK',
+            title: 'EXPLOIT FRAMEWORK',
             features: ['• Payload Generation', '• Exploit Development', '• Shellcode Creation', '• ROP/JOP Chains', '• Buffer Overflow Tools']
         },
         {
-            title: '🔍 FORENSICS TOOLKIT',
+            title: 'FORENSICS TOOLKIT',
             features: ['• File Carving', '• Memory Analysis', '• Registry Analysis', '• Timeline Reconstruction', '• Evidence Collection']
         },
         {
-            title: '🛡️ SECURITY AUDIT',
+            title: 'SECURITY AUDIT',
             features: ['• Authentication Management', '• Privilege Control', '• Audit Logging', '• IDS/IPS Integration', '• Security Monitoring']
         }
     ];
 
     const syscallComponents = [
         {
-            title: '🔧 PENTESTING SYSCALLS',
+            title: 'PENTESTING SYSCALLS',
             features: ['• sys_scan() - Network Scanning', '• sys_exploit() - Exploit Execution', '• sys_forensics() - Forensics Analysis', '• sys_crypto() - Cryptographic Operations', '• sys_audit() - Security Auditing', '• sys_capture() - Packet Capture', '• sys_inject() - Code Injection', '• 15+ Additional Specialized Calls']
         }
     ];
 
     const kernelCoreComponents = [
         {
-            title: '📋 PROCESS MANAGEMENT',
+            title: 'PROCESS MANAGEMENT',
             features: ['• Task Scheduler', '• Process Manager', '• Thread Manager', '• IPC Manager', '• Signal Handler', '• Context Switching']
         },
         {
-            title: '💾 MEMORY MANAGEMENT',
+            title: 'MEMORY MANAGEMENT',
             features: ['• Physical Memory Manager', '• Virtual Memory Manager', '• Kernel Heap Manager', '• Buddy Allocator', '• Slab Allocator', '• Memory Protection']
         },
         {
-            title: '🔒 SECURITY FRAMEWORK',
+            title: 'SECURITY FRAMEWORK',
             features: ['• Access Control System', '• Authentication Manager', '• Cryptography Engine', '• Audit Logger', '• IDS/IPS Engine', '• Security Validation']
         }
     ];
 
     const hardwareComponents = [
         {
-            title: '🖥️ DEVICE DRIVERS',
+            title: 'DEVICE DRIVERS',
             features: ['• VGA/Display Driver (Text Mode)', '• Keyboard Driver (PS/2)', '• Storage Driver (IDE/ATA)', '• Network Stack (TCP/IP)', '• Timer Driver (PIT/HPET)', '• Serial Port Driver']
         },
         {
-            title: '⚡ INTERRUPT HANDLING',
+            title: 'INTERRUPT HANDLING',
             features: ['• IDT Manager (256 entries)', '• IRQ Handler (0-15)', '• Exception Handler', '• System Call Gate', '• Security Validation', '• Interrupt Routing']
         }
     ];
 
     const bootComponents = [
         {
-            title: '🔐 ADVANCED BOOT LOADER',
+            title: 'ADVANCED BOOT LOADER',
             features: ['• Multiboot Parser (GRUB2)', '• ACPI Parser (RSDP, FADT, MADT)', '• EFI Support (UEFI)', '• Security Features (SMEP/SMAP)', '• Module Loader (Payload)', '• Hardware Detection', '• Memory Map Parsing', '• Framebuffer Setup']
         }
     ];
@@ -84,10 +84,10 @@ export default function KernelArchitecture() {
             <div className="red-matrix-scan"></div>
             <div className="relative z-10 max-w-7xl mx-auto">
                 <h1
-                    className="text-5xl font-bold text-center text-red-500 mb-4 title-glow"
+                    className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-red-500 mb-4 title-glow"
                     style={{ textShadow: '0 0 20px #ef4444, 0 0 40px #ef4444' }}
                 >
-                    🔒 CATE-KERNEL ARCHITECTURE 🔒
+                    CATE-KERNEL ARCHITECTURE
                 </h1>
 
                 <div className="text-center mb-8">
@@ -110,14 +110,14 @@ export default function KernelArchitecture() {
                 <Arrow />
 
                 <Layer
-                    title="👤 USER APPLICATIONS LAYER"
+                    title="USER APPLICATIONS LAYER"
                     components={userApplicationsComponents}
                 />
 
                 <Arrow />
 
                 <Layer
-                    title="⚡ SYSTEM CALL INTERFACE (ABI)"
+                    title="SYSTEM CALL INTERFACE (ABI)"
                     type="syscall"
                     components={syscallComponents}
                 />
@@ -125,27 +125,27 @@ export default function KernelArchitecture() {
                 <Arrow />
 
                 <Layer
-                    title="⚙️ KERNEL CORE SERVICES"
+                    title="KERNEL CORE SERVICES"
                     components={kernelCoreComponents}
                 />
 
                 <Arrow />
 
                 <Layer
-                    title="🔌 HARDWARE ABSTRACTION LAYER"
+                    title="HARDWARE ABSTRACTION LAYER"
                     components={hardwareComponents}
                 />
 
                 <Arrow />
 
                 <Layer
-                    title="🚀 BOOT & INITIALIZATION LAYER"
+                    title="BOOT & INITIALIZATION LAYER"
                     type="boot"
                     components={bootComponents}
                 />
 
                 <Layer
-                    title="📊 TECHNICAL SPECIFICATIONS"
+                    title="TECHNICAL SPECIFICATIONS"
                     type="specs"
                     specs={technicalSpecs}
                 />
