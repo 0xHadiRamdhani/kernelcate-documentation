@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CATE-Kernel Architecture Documentation
 
-## Getting Started
+Dokumentasi arsitektur kernel CATE-Kernel yang dibangun dengan Next.js dan TailwindCSS.
 
-First, run the development server:
+## 🚀 Fitur
+
+- **Arsitektur Lengkap**: 5 layer utama kernel dengan detail komponen
+- **Tema Merah Cyber**: Desain dengan tema merah dan efek glow
+- **Animasi Interaktif**: Efek glow dan hover animations
+- **Responsive Design**: Tampilan optimal di semua ukuran layar
+- **Dark Mode Support**: Tampilan gelap yang nyaman di mata
+- **Link ke Repository Kernel**: Akses langsung ke repository kernel asli
+
+## 🔗 Repository Kernel Asli
+Dokumentasi ini merujuk pada kernel CATE-Kernel yang dapat diakses di:
+**[https://github.com/0xHadiRamdhani/cate-kernel](https://github.com/0xHadiRamdhani/cate-kernel)**
+
+## �️ Teknologi
+
+- **Next.js 16.0.3**: Framework React modern
+- **React 19.2.0**: Library UI terbaru
+- **TailwindCSS 4**: Utility-first CSS framework
+- **TypeScript**: Type safety untuk kode yang lebih baik
+
+## 📦 Instalasi
 
 ```bash
+# Clone repository
+git clone https://github.com/hadiramdhani/cate-kernel-docs.git
+
+# Masuk ke directory
+cd cate-kernel-docs
+
+# Install dependencies
+npm install
+
+# Jalankan development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏗️ Struktur Layer
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. User Applications Layer
+- Network Scanner
+- Exploit Framework
+- Forensics Toolkit
+- Security Audit
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. System Call Interface (ABI)
+- Pentesting Syscalls (20+ specialized calls)
 
-## Learn More
+### 3. Kernel Core Services
+- Process Management
+- Memory Management
+- Security Framework
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Hardware Abstraction Layer
+- Device Drivers
+- Interrupt Handling
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 5. Boot & Initialization Layer
+- Advanced Boot Loader
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Spesifikasi Teknis
 
-## Deploy on Vercel
+- **Architecture**: x86_64 (64-bit)
+- **Memory Model**: 4-Level Paging with 2MB Huge Pages
+- **Security Features**: SMEP, SMAP, NX Bit, Stack Protection
+- **Boot Protocol**: GRUB2 Multiboot2 Specification Compliant
+- **File System**: Custom Pentesting-Optimized FS
+- **Network Stack**: Complete TCP/IP with Pentesting Extensions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👤 Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Hadi Ramdhani**
+- GitHub: [@hadiramdhani](https://github.com/hadiramdhani)
+
+## 📄 Lisensi
+
+Proyek ini open source dan tersedia untuk digunakan sesuai kebutuhan Anda.
+
+## 🤝 Kontribusi
+
+Kontribusi sangat dipersilahkan! Silakan buka issue atau pull request.
+
+---
+
+**Catatan**: Dokumentasi ini merupakan representasi visual dari arsitektur kernel CATE-Kernel yang dirancang khusus untuk keperluan pentesting dan keamanan siber.

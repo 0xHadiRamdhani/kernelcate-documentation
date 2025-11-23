@@ -1,7 +1,13 @@
 {
-  "name": "kernelcate-docs",
-  "version": "0.1.0",
-  "private": true,
+  "name": "cate-kernel-docs",
+  "version": "1.0.0",
+  "description": "CATE-Kernel Architecture Documentation with Next.js and TailwindCSS",
+  "author": "Hadi Ramdhani",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hadiramdhani/cate-kernel-docs"
+  },
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
