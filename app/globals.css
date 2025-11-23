@@ -151,7 +151,7 @@ body {
   z-index: -1;
 }
 
-/* Matrix Background Effect */
+/* Matrix Background Effect - Simplified and elegant like codecraftersdownloads.vercel.app */
 .matrix-bg {
   position: fixed;
   top: 0;
@@ -167,15 +167,16 @@ body {
 .matrix-rain {
   position: absolute;
   top: -100%;
-  color: #00ff00;
+  color: #ff0000;
   font-family: 'Courier New', monospace;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1;
   animation: matrix-fall linear infinite;
-  opacity: 0.6;
-  text-shadow: 0 0 3px #00ff00;
+  opacity: 0.9;
+  text-shadow: 0 0 8px #ff0000;
   writing-mode: vertical-rl;
   text-orientation: upright;
+  letter-spacing: 2px;
 }
 
 @keyframes matrix-fall {
@@ -185,20 +186,47 @@ body {
   }
   100% {
     top: 100%;
-    opacity: 0;
+    opacity: 0.3;
   }
 }
 
 .matrix-glow {
-  animation: matrix-glow 2s infinite alternate;
+  transition: opacity 0.1s ease-out;
 }
 
-@keyframes matrix-glow {
+/* Subtle red matrix scan effect */
+.red-matrix-scan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 0, 0, 0.03) 50%, transparent 100%);
+  animation: red-matrix-scan 4s linear infinite;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+@keyframes red-matrix-scan {
   0% {
-    text-shadow: 0 0 5px #00ff00;
+    transform: translateX(-100%);
   }
   100% {
-    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    transform: translateX(100%);
+  }
+}
+
+/* White glow effect for profile name */
+.white-glow {
+  animation: white-glow 2s infinite alternate;
+}
+
+@keyframes white-glow {
+  from {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+  }
+  to {
+    text-shadow: 0 0 15px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
   }
 }
 

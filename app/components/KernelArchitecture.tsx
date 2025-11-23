@@ -4,6 +4,7 @@ import React from 'react';
 import Layer from './Layer';
 import Arrow from './Arrow';
 import MatrixBackground from './MatrixBackground';
+import Profile from './Profile';
 
 export default function KernelArchitecture() {
     const userApplicationsComponents = [
@@ -80,6 +81,7 @@ export default function KernelArchitecture() {
     return (
         <div className="min-h-screen bg-black text-white p-6 relative overflow-hidden cyber-matrix">
             <MatrixBackground />
+            <div className="red-matrix-scan"></div>
             <div className="relative z-10 max-w-7xl mx-auto">
                 <h1
                     className="text-5xl font-bold text-center text-red-500 mb-4 title-glow"
@@ -87,6 +89,7 @@ export default function KernelArchitecture() {
                 >
                     🔒 CATE-KERNEL ARCHITECTURE 🔒
                 </h1>
+
                 <div className="text-center mb-8">
                     <div className="inline-flex flex-col items-center space-y-2">
                         <a
@@ -146,6 +149,10 @@ export default function KernelArchitecture() {
                     type="specs"
                     specs={technicalSpecs}
                 />
+
+                {/* Profile Section - Pindahkan ke paling bawah */}
+                <Profile />
+
             </div>
         </div>
     );

@@ -10,8 +10,16 @@ Dokumentasi arsitektur kernel CATE-Kernel yang dibangun dengan Next.js dan Tailw
 - **Responsive Design**: Tampilan optimal di semua ukuran layar
 - **Dark Mode Support**: Tampilan gelap yang nyaman di mata
 - **Link ke Repository Kernel**: Akses langsung ke repository kernel asli
+- **Profile Developer**: Informasi lengkap tentang developer
 
-## 🔗 Repository Kernel Asli
+## 👤 Profile Developer
+**Hadi Ramdhani** - Siswa SMK yang memiliki minat besar di bidang programming. Aktif belajar dan mengembangkan keterampilan pemrograman melalui berbagai proyek pribadi dan kegiatan sekolah. Fokus utama adalah memahami dasar-dasar pengembangan perangkat lunak, mempelajari bahasa pemrograman modern, serta membangun aplikasi sederhana yang bermanfaat.
+
+Memiliki ketertarikan kuat pada bidang frontend development, mobile development, serta eksplorasi teknologi seperti Flutter, Python, dan web development. Senang memecahkan masalah melalui logika pemrograman dan terus berusaha meningkatkan kemampuan melalui praktik langsung, membaca dokumentasi, dan mengikuti perkembangan teknologi terbaru.
+
+Sebagai pelajar, berkomitmen untuk terus berkembang, beradaptasi dengan teknologi baru, serta mempersiapkan diri untuk berkarier di dunia IT sebagai pengembang perangkat lunak yang profesional.
+
+## � Repository Kernel Asli
 Dokumentasi ini merujuk pada kernel CATE-Kernel yang dapat diakses di:
 **[https://github.com/0xHadiRamdhani/cate-kernel](https://github.com/0xHadiRamdhani/cate-kernel)**
 

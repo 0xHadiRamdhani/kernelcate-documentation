@@ -6,13 +6,13 @@ export default function MatrixBackground() {
     const [matrixColumns, setMatrixColumns] = useState<Array<{ id: number; left: number; delay: number; duration: number; chars: string[] }>>([]);
 
     useEffect(() => {
-        const chars = 'ｦｧｨｩｪｫｬｭｮｯｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ@#$%^&*()_+-=[]{}|;:,.<>?/~`';
+        const chars = '01';
         const matrixArray = [];
 
-        // Generate matrix rain columns
-        for (let i = 0; i < 60; i++) {
+        // Generate matrix rain columns - lebih banyak kolom untuk efek yang lebih padat
+        for (let i = 0; i < 150; i++) {
             const columnChars = [];
-            const columnLength = 15 + Math.floor(Math.random() * 25);
+            const columnLength = 25 + Math.floor(Math.random() * 40);
 
             for (let j = 0; j < columnLength; j++) {
                 columnChars.push(chars[Math.floor(Math.random() * chars.length)]);
@@ -21,8 +21,8 @@ export default function MatrixBackground() {
             matrixArray.push({
                 id: i,
                 left: Math.random() * 100,
-                delay: Math.random() * 8,
-                duration: 8 + Math.random() * 12,
+                delay: Math.random() * 3,
+                duration: 4 + Math.random() * 6,
                 chars: columnChars
             });
         }
@@ -47,8 +47,8 @@ export default function MatrixBackground() {
                             key={index}
                             className="matrix-glow"
                             style={{
-                                opacity: index === 0 ? 1 : 0.8 - (index * 0.05),
-                                color: index === 0 ? '#00ff00' : '#008800'
+                                opacity: Math.max(0.1, 1 - (index * 0.08)),
+                                color: index < 3 ? '#ff0000' : (index < 8 ? '#cc0000' : '#990000')
                             }}
                         >
                             {char}
