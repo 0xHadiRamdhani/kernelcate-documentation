@@ -3,6 +3,7 @@
 import React from 'react';
 import Layer from './Layer';
 import Arrow from './Arrow';
+import MatrixBackground from './MatrixBackground';
 
 export default function KernelArchitecture() {
     const userApplicationsComponents = [
@@ -77,8 +78,9 @@ export default function KernelArchitecture() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-white p-6">
-            <div className="max-w-7xl mx-auto">
+        <div className="min-h-screen bg-black text-white p-6 relative overflow-hidden cyber-matrix">
+            <MatrixBackground />
+            <div className="relative z-10 max-w-7xl mx-auto">
                 <h1
                     className="text-5xl font-bold text-center text-red-500 mb-4 title-glow"
                     style={{ textShadow: '0 0 20px #ef4444, 0 0 40px #ef4444' }}
